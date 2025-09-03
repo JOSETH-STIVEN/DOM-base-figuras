@@ -20,6 +20,14 @@ const figura = document.getElementById('figure');
         figura.style.animation = "rotar 3s linear infinite";
     }
 
+    function moverA() {
+        figura.style.transform = "translateY(-45px)";
+    }
+
+    function moverB() {
+        figura.style.transform = "translateY(40px)";
+    }
+
 
 
 
@@ -34,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnStar').addEventListener('click', estrella);
     document.getElementById('btnGif').addEventListener('click', gif);
     document.getElementById('btnAnim').addEventListener('click', animacion);
+    document.getElementById('btnMoveUp').addEventListener('click', moverA);
+    document.getElementById('btnMoveDown').addEventListener('click', moverB);
+
+
+
 
 
 
