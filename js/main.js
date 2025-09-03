@@ -37,19 +37,19 @@ const figura = document.getElementById('figure');
     }
 
     function titulo() {
-        const ntitle= prompt('Ingrese un nuevo Titulo');
+        let ntitle= prompt('Ingrese un nuevo Titulo');
         const title=document.getElementById('mainTitle');
         title.textContent = ntitle;
     }
 
     function parrafo() {
-        const nParrafo= prompt('Ingrese un nuevo Parrafo');
+        let nParrafo= prompt('Ingrese un nuevo Parrafo');
         const p=document.getElementById('mainParagraph');
         p.textContent = nParrafo;
     }
 
     function Aparrafo() {
-        const parrafoN= prompt('Ingrese un parrafo a agregar');
+        let parrafoN= prompt('Ingrese un parrafo a agregar');
         const parrafoX= document.getElementById('extraParagraphs');
 
         parrafoX.textContent=parrafoN;
@@ -59,6 +59,11 @@ const figura = document.getElementById('figure');
     function eParrafo() {
         const pExtra=document.getElementById('extraParagraphs');
         pExtra.remove();
+    }
+
+    function color() {
+        const nColor=prompt('Ingrese un color para su figura con #');
+        figura.style.background=nColor;
     }
 
 
@@ -78,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeParagraph').addEventListener('click', parrafo);
     document.getElementById('btnAddParagraph').addEventListener('click', Aparrafo);
     document.getElementById('btnRemoveParagraph').addEventListener('click', eParrafo);
+    document.getElementById('btnHexColor').addEventListener('click', color);
+
 
 
 
