@@ -42,6 +42,11 @@ const figura = document.getElementById('figure');
         title.textContent = ntitle;
     }
 
+    function parrafo() {
+        const nParrafo= prompt('Ingrese un nuevo Parrafo');
+        const p=document.getElementById('mainParagraph');
+        p.textContent = nParrafo;
+    }
 
 
 
@@ -60,14 +65,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnMoveLeft').addEventListener('click', moverI);
     document.getElementById('btnMoveRight').addEventListener('click', moverD);
     document.getElementById('btnChangeTitle').addEventListener('click', titulo);
-
-
-
-
-
-
-
-
-
-
+    document.getElementById('btnChangeParagraph').addEventListener('click', parrafo);
 })
