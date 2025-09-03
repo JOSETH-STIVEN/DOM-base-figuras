@@ -65,11 +65,6 @@ const figura = document.getElementById('figure');
         const nColor=prompt('Ingrese un color para su figura con #');
         figura.style.background=nColor;
     }
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
@@ -84,8 +79,4 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnAddParagraph').addEventListener('click', Aparrafo);
     document.getElementById('btnRemoveParagraph').addEventListener('click', eParrafo);
     document.getElementById('btnHexColor').addEventListener('click', color);
-
-
-
-
 })
