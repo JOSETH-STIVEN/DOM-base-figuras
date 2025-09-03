@@ -28,6 +28,10 @@ const figura = document.getElementById('figure');
         figura.style.transform = "translateY(40px)";
     }
 
+    function moverI() {
+        figura.style.transform = "translateX(-100px)";
+    }
+
 
 
 
@@ -44,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnAnim').addEventListener('click', animacion);
     document.getElementById('btnMoveUp').addEventListener('click', moverA);
     document.getElementById('btnMoveDown').addEventListener('click', moverB);
+    document.getElementById('btnMoveLeft').addEventListener('click', moverI);
+
+
 
 
 
