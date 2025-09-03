@@ -16,6 +16,10 @@ const figura = document.getElementById('figure');
 
     }
 
+    function animacion() {
+        figura.style.animation = "rotar 3s linear infinite";
+    }
+
 
 
 
@@ -29,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
     document.getElementById('btnGif').addEventListener('click', gif);
+    document.getElementById('btnAnim').addEventListener('click', animacion);
+
 
 
 })
