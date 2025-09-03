@@ -36,6 +36,12 @@ const figura = document.getElementById('figure');
         figura.style.transform = "translateX(100px)";
     }
 
+    function titulo() {
+        const ntitle= prompt('Ingrese un nuevo Titulo');
+        const title=document.getElementById('mainTitle');
+        title.textContent = ntitle;
+    }
+
 
 
 
@@ -53,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnMoveDown').addEventListener('click', moverB);
     document.getElementById('btnMoveLeft').addEventListener('click', moverI);
     document.getElementById('btnMoveRight').addEventListener('click', moverD);
+    document.getElementById('btnChangeTitle').addEventListener('click', titulo);
+
 
 
 
