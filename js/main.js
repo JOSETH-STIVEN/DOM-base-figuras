@@ -56,7 +56,10 @@ const figura = document.getElementById('figure');
     }
 
 
-
+    function eParrafo() {
+        const pExtra=document.getElementById('extraParagraphs');
+        pExtra.remove();
+    }
 
 
 
@@ -74,5 +77,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeTitle').addEventListener('click', titulo);
     document.getElementById('btnChangeParagraph').addEventListener('click', parrafo);
     document.getElementById('btnAddParagraph').addEventListener('click', Aparrafo);
+    document.getElementById('btnRemoveParagraph').addEventListener('click', eParrafo);
+
+
 
 })
