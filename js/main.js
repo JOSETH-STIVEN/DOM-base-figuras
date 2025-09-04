@@ -141,6 +141,11 @@ const figura = document.getElementById('figure');
         link.setAttribute('href', 'https://github.com/JOSETH-STIVEN');
     }
 
+    function desLink() {
+        link.removeAttribute('href');
+        link.style.cursor = 'not-allowed';
+    }
+
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
@@ -163,11 +168,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
     document.getElementById('btnChangeLink').addEventListener('click', cHref);
     document.getElementById('btnOpenLink').addEventListener('click', aPestaña);
-
-
-
-
-
-
-
+    document.getElementById('btnDisableLink').addEventListener('click', desLink);
 })
