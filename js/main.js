@@ -114,6 +114,11 @@ const figura = document.getElementById('figure');
         }
     }
 
+    function mostrarOcultar() {
+        const imagen = document.getElementById('mainImage');
+        imagen.classList.toggle('oculto');
+    }
+
 
 
 
@@ -136,6 +141,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChooseFigure').addEventListener('click', eFigura);
     document.getElementById('btnChangeImageNext').addEventListener('click', cImagenSig);
     document.getElementById('btnChangeImagePrev').addEventListener('click', cImagenAnt);
+    document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
+
 
 
 
