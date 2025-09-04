@@ -136,6 +136,10 @@ const figura = document.getElementById('figure');
 
 
 
+    function aPestaña() {
+        link.setAttribute('target', '_blanck');
+        link.setAttribute('href', 'https://github.com/JOSETH-STIVEN');
+    }
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -158,6 +162,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
     document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
     document.getElementById('btnChangeLink').addEventListener('click', cHref);
+    document.getElementById('btnOpenLink').addEventListener('click', aPestaña);
+
 
 
 
