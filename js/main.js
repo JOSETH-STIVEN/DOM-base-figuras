@@ -87,6 +87,32 @@ const figura = document.getElementById('figure');
                 break;
         }
     }
+    let imgActual = 0;
+    function cImagenSig() {
+        const imagenes = ['img/imagen.jpg', 'img/imagen2.jpg', 'img/imagen3.jpg'];
+        const imagenA = document.getElementById('mainImage');
+        imagenA.src = imagenes[imgActual];
+
+        imgActual++;
+
+        if (imgActual >= imagenes.length) {
+            imgActual = 0;
+            
+        }
+    }
+
+    function cImagenAnt() {
+        const imagenes = ['img/imagen.jpg', 'img/imagen2.jpg', 'img/imagen3.jpg'];
+        const imagenA = document.getElementById('mainImage');
+        imagenA.src = imagenes[imgActual];
+
+        imgActual--;
+
+        if (imgActual < 0) {
+            imgActual = imagenes.length - 1;
+            
+        }
+    }
 
 
 
@@ -108,5 +134,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnRemoveParagraph').addEventListener('click', eParrafo);
     document.getElementById('btnHexColor').addEventListener('click', color);
     document.getElementById('btnChooseFigure').addEventListener('click', eFigura);
+    document.getElementById('btnChangeImageNext').addEventListener('click', cImagenSig);
+    document.getElementById('btnChangeImagePrev').addEventListener('click', cImagenAnt);
+
+
 
 })
