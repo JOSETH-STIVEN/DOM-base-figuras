@@ -119,6 +119,12 @@ const figura = document.getElementById('figure');
         imagen.classList.toggle('oculto');
     }
 
+    function cambiarAlt() {
+        let cAlt = prompt('Ingrese un nuevo texto para la imagen');
+        const imagen = document.getElementById('mainImage');
+
+        imagen.setAttribute('alt', cAlt);
+    }
 
 
 
@@ -142,6 +148,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeImageNext').addEventListener('click', cImagenSig);
     document.getElementById('btnChangeImagePrev').addEventListener('click', cImagenAnt);
     document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
+    document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
+
 
 
 
