@@ -127,6 +127,14 @@ const figura = document.getElementById('figure');
     }
 
 
+    const link = document.getElementById('mainLink')
+
+    function cHref() {
+        let nHref = prompt('Ingrese una nueva URL');
+        link.setAttribute('href', nHref);
+    }
+
+
 
 
 
@@ -149,6 +157,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeImagePrev').addEventListener('click', cImagenAnt);
     document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
     document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
+    document.getElementById('btnChangeLink').addEventListener('click', cHref);
+
 
 
 
