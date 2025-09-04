@@ -65,6 +65,34 @@ const figura = document.getElementById('figure');
         const nColor=prompt('Ingrese un color para su figura con #');
         figura.style.background=nColor;
     }
+
+    function eFigura(){
+        let cFigura = prompt('Ingrese el nombre de la figura al cambiar sea circulo, estrella o cuadrado');
+        switch (cFigura) {
+            case 'circulo':
+                figura.style.clipPath = 'none';
+                figura.style.borderRadius= "50%";
+                break;
+            case 'cuadrado':
+                figura.style.clipPath = 'none';
+                figura.style.borderRadius = '0';
+                break;
+            case 'estrella':
+                figura.style.borderRadius = '0';
+                figura.style.clipPath = "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)";
+                break;
+        
+            default:
+                alert('Figura incorrecta escoja circulo, cuadrado o estrella');
+                break;
+        }
+    }
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
@@ -79,4 +107,6 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnAddParagraph').addEventListener('click', Aparrafo);
     document.getElementById('btnRemoveParagraph').addEventListener('click', eParrafo);
     document.getElementById('btnHexColor').addEventListener('click', color);
+    document.getElementById('btnChooseFigure').addEventListener('click', eFigura);
+
 })
